@@ -11,6 +11,9 @@ const sumNumber = document.getElementById("somma");
 const arrayNum = [];
 console.log("l'array iniziale è:" , arrayNum);
 
+// inizializzo una variabile per salvare il risultato della somma 
+let sum = 0;
+
 
 // 2. chiedo all'utente per 10 volte di inserire un numero
 for(let i = 0; i < 10; i++){
@@ -22,4 +25,10 @@ for(let i = 0; i < 10; i++){
 // 3. popolo l'array con i numeri inseriti dall'utente 
 console.log("l'array aggiornato è:" , arrayNum );
 
+// 4. eseguo la somma dei vari elementi dell'array 
+for(let i = 0; i < arrayNum.length; i++) {
+    sum += arrayNum[i];
+    // sum = sum + arrayNum[i];
+}
 
+console.log("la somma di tutti i numeri inseriti è unguale a:" , sum);
