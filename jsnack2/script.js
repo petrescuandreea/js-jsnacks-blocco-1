@@ -19,22 +19,16 @@ console.log(`la seconda parola inserita è: ${word2}`);
 
 // 3. confronto le due parole e stampo l'output -> if
 if (word1.length > word2.length) {
-    // 3.1 stampo la parola più corta 
-    word.innerHTML = `la parola più corta è: ${word2}.`;
+    // 3.1 stampo la parola più corta poi la più lunga
+    word.innerHTML = `la parola più corta è: ${word2}. + " " + la parola più lunga è: ${word1}`;
     console.log(`la parola più corta è: ${word2}`);
     
-    // 3.2 stampo la parola più lunga 
-    word.innerHTML += ` la parola più lunga è: ${word1}`;
-    console.log(`la parola più lunga è: ${word1}`);
 
 } else if (word1.length < word2.length) {
-    // stampo la parola più corta 
-    word.innerHTML = `la parola più corta è: ${word1}.`;
+    // stampo la parola più corta poi la più lunga
+    word.innerHTML = `la parola più corta è: ${word1}. +  " " + la parola più lunga è: ${word2}`;
     console.log(`la parola più corta è: ${word1}`);
 
-    // stampo la parola più lunga 
-    word.innerHTML += ` la parola più lunga è: ${word2}`;
-    console.log(`la parola più lunga è: ${word2}`);
 
 } else {
     console.log("le parole sono lunghe uguali");

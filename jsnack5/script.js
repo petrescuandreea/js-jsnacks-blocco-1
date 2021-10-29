@@ -17,7 +17,7 @@ for(let i = 0; i < 6; i++){
     console.log("Il numero inserito dall'utente è: " , userNumber);
 
     // 2.1 se il numero inserito dall'utente è dispari lo inserisco nell'array 
-    if(userNumber % 2 !=0){
+    if(userNumber % 2 !==0){
         arrayNumbers.push(userNumber);
     }
 
